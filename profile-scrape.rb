@@ -93,17 +93,8 @@ class Student
 
 end
 
-get '/' do  
-  @students = Student.all  
-  erb :home  
-end
 
-get '/:id' do
-  @student = Student.find params[:id]
-  erb :profile
-end
-
-# Commented out below is the CLI for SQL queries 
+# Below is the CLI for SQL queries 
 
 # Student.create_table
 # Student.scrape_student_urls
